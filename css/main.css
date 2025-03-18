@@ -1,0 +1,874 @@
+:root {
+  --brand: #d9b45a;
+  --sub: #6ac754;
+  --body: #516171;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.istf1-row{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.istf1{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.heading1{
+  word-spacing: 1px;
+}
+
+button.readmore__toggle {
+  display: flex;
+  margin-top: 1rem;
+  padding: 5px 20px;
+  border: none;
+  background-color: #d9b45a;
+  color: #000;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size:medium;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(134, 97, 2, 1);
+  transition: box-shadow 0.3s ease; /* Add transition effect for hover */
+}
+
+button.readmore__toggle:hover {
+  background-color: #a77904;
+}
+.read{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+p{
+  color: #000;
+}
+/* Path */
+.banner-area {
+  position: relative;
+  min-height: 450px;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/CONTACT/path.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.banner-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 68px;
+  font-weight: 900;
+  /* word-spacing: 15px; */
+  letter-spacing: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-title {
+    font-size: 32px;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.banner-heading {
+  text-align: center;
+}
+.banner-span h3{
+color: #fff;
+font-weight: 400;
+font-size: large;
+}
+
+/* Service box bg */
+.ts-service-box-bg {
+  color: black;
+  padding: 20px;
+  border: 2px solid #a77904;
+  border-radius: 10%;
+  height: 250px;
+  width: 380px;
+  display: grid;
+  place-items: center;
+}
+
+.ts-service-box-bg h4,
+.ts-service-box-bg h3 {
+  color: black;
+}
+.ts-service-icon i{
+  color: #a77904;
+ font-size: xx-large;
+}
+.ts-service-box-content p{
+font-size: small;
+}
+@media (max-width: 1200px) {
+  .ts-service-box-bg {
+    width: 100%;
+    max-width: 350px;
+    margin: 0px auto;
+  }
+}
+
+/* contact  */
+.contact-background-image {
+  background-image: url(../images/CONTACT/bg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-overlay {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.contact-content-container {
+  text-align: center;
+}
+
+.contact-heading {
+  margin-bottom: 20px;
+}
+
+.contact-form-container {
+  margin: 0 auto;
+  width: 900px;
+
+}
+
+.contact-form-container .form-group{
+  margin-bottom: 10px;
+}
+
+.contact-form-container .form-group {
+  width: 80%;
+  height:fit-content;
+  border: 1px solid var(--brand);
+  background: linear-gradient(rgba(255, 255, 255,.8), rgb(255, 255, 255,.8));
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.contact-form-container .text-area-form-group{
+  width: 80%;
+  height:fit-content;
+  border: 1px solid var(--brand);
+  background: linear-gradient(rgba(255, 255, 255,.8), rgb(255, 255, 255,.8));
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+.contact-form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 20px;
+}
+input:hover,:active,:focus {
+  outline: none; /* Removes the highlight effect */
+}
+textarea:hover,:active,:focus {
+  outline: none; /* Removes the highlight effect */
+}
+
+.contact-form-container .form-group input[type="text"],
+.contact-form-container .form-group input[type="email"],
+.contact-form-container .form-group input[type="tel"],
+.contact-form-container .form-group textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 80%;
+  padding-left: 10px;
+  border-bottom: 1px solid #516171;
+  background: linear-gradient(rgba(255, 255, 255,.1), rgb(255, 255, 255,.1))
+
+}
+.contact-form{
+  display: grid;
+  place-items: center;
+}
+.contact-submit-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  margin: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-submit-btn:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 992px) {
+  .contact-form-container {
+    width: 100%;
+  }
+  .contact-form-container .form-group {
+    width: 100%;
+  }
+
+  .contact-form-container .form-group input[type="text"],
+  .contact-form-container .form-group input[type="email"],
+  .contact-form-container .form-group input[type="tel"],
+  .contact-form-container .form-group textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    width: 100%;
+  }
+
+  
+}
+/* ---animeties  */
+.slider-container {
+  position: relative;
+  /* width: 95%;
+  margin: 0 auto;  */
+  border-radius: 10px; 
+  overflow: hidden;
+}
+.slider img {
+  width: 100%; 
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.items {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 430px;
+  /* height: 580px; */
+  /* padding-bottom: 56.25%; */
+  padding-bottom: 30px;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* transition: opacity .6s ease-in-out; */
+  transition: opacity 3.5s ease-in-out;
+  &.current {
+    opacity: 1;
+  }
+
+.item img {
+  position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+  
+}
+/* overlay contetn  */
+.amenities-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height: fit-content;
+  pointer-events: none; 
+  /* background: linear-gradient(rgb(255,255,255,0.4),rgb(255,255,255,0.4)); */
+ }
+
+.amenities-overlay .overlay-content {
+  position: relative;
+  bottom: 0; 
+  left: 0; 
+  color: rgb(255, 255, 255); 
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.overlay-content h5{
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .amenities-overlay{
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .amenities-overlay{
+    padding-bottom: 25px;
+  }
+  
+}
+
+.amenities-overlay .read-more {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: var(--brand); 
+  color: #000;
+  padding: 2px 5px;
+  border-radius: 20px;
+  z-index: 1;
+  border: 2px solid var(--brand);
+  font-size: 13px;
+  pointer-events: visible;
+  font-weight: 500;
+}
+/* ----------------------------- */
+/* ---hover-- */
+.hover-container {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: color 0.3s ease; /* Transition color only */
+  border-radius: 20px;
+  border: 2px solid var(--brand);
+  background-color: transparent; /* Set initial background color to transparent */
+}
+
+.hover-container:hover {
+  background-color: var(--brand); 
+  
+}
+
+.hover-container-logo {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-heading {
+  margin-top: 40%;
+  transition: margin-top 0.3s ease;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.hover-paragraph {
+  margin-top: 10%;
+  transition: margin-top 0.3s ease;
+  text-align: center;
+ 
+}
+.extra-content {
+  display: none;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.hover-container:hover .hover-container-logo {
+  display: none; /* Hide logo on hover */
+}
+.hover-container:hover .hover-container-icon {
+  display: none; /* Hide logo on hover */
+}
+
+.hover-container:hover .hover-heading {
+  margin-top: 10px; /* Move heading up on hover */
+}
+
+.hover-container:hover .hover-paragraph {
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 0; /* Move paragraph up on hover */
+}
+
+.hover-container:hover .extra-content {
+  display: inline;
+  text-align: left;
+  margin-top: 0;
+   /* Show extra content on hover */
+}
+@media (max-width: 767px) {
+  .hover-container {
+    margin-top: 20px;
+    height: 270px;
+  }
+  .hover-container-logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-heading {
+    margin-top: 20%;
+    transition: margin-top 0.3s ease;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .hover-paragraph {
+    margin-top: 15px;
+    transition: margin-top 0.3s ease;
+    text-align: center;
+   
+  }
+}
+@media (min-width: 762px) and (max-width: 992px) {
+  .hover-container {
+    margin-top: 20px;
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .hover-container {
+    margin-top: 20px;
+    height: 300px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hover-container {
+    margin-top: 20px;
+    height: 300px;
+  }
+  .hover-container-logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-heading {
+    margin-top: 40%;
+    transition: margin-top 0.3s ease;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .hover-paragraph {
+    margin-top: 5px;
+    transition: margin-top 0.3s ease;
+    text-align: center;
+   
+  }
+}
+/* hummin  */
+/* hummin  */
+/* .humming-row{
+  margin-left: 30px;
+  margin-right: 30px;
+} */
+/* Base styling for image container */
+.humming-container,
+.humming-container-fluid {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* Base styling for image */
+.humming-img,
+.humming-img-fluid {
+  width: 100%;
+  height: 400px; /* Adjust this height as needed */
+  border-radius: 20px;
+  object-fit: cover;
+  border: 1px solid var(--brand); /* Assuming you have a variable set for brand color */
+  transition: filter 0.5s ease; /* Removed transform transition */
+}
+
+/* Hover effect to dim the image and reveal content */
+.humming-container:hover .humming-img,
+.humming-container-fluid:hover .humming-img-fluid {
+  filter: brightness(20%);
+}
+
+/* Base styling for content overlay */
+.humming-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+.humming-content h2{
+  color: white;
+}
+/* Hover effect to reveal content on hover */
+.humming-container:hover .humming-content,
+.humming-container-fluid:hover .humming-content {
+  opacity: 1;
+}
+
+/* Overlay effect */
+.humming-img::before,
+.humming-img-fluid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 2s ease-out; /* Background color transition */
+}
+
+/* Overlay color transition animation */
+.humming-container:hover .humming-img::before,
+.humming-container-fluid:hover .humming-img-fluid::before {
+  background-color: rgba(0, 0, 0, 0.8); /* Final overlay color */
+}
+
+/* Adjusted height for fluid image */
+.humming-img-fluid {
+  height: 450px; /* Adjust this height as needed */
+}
+
+/* Adjusted overlay transition */
+.humming-container-fluid .humming-img-fluid::before {
+  transition: background-color 2s ease-out; /* Simplified transition */
+}
+
+.btn-read-more{
+  border: 1px solid var(--brand);
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+.btn-read-more:hover{
+  background-color: var(--brand);
+  box-shadow: 0px 15px 25px var(--shadow);
+  border: 1px solid var(--brand);
+}
+
+/* about page  */
+.about-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.about-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.large-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* object-fit: contain; */
+  display: block;
+  border-radius: 20px;
+  height: auto; /* Change height to auto to maintain aspect ratio */
+  max-height: 1500px;
+  /* max-height: 900px; */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+ 
+}
+
+.overlay-heading {
+  position: relative;
+  margin-bottom: 20px;
+  top: 1px;
+  color: black;
+  font-weight: bolder;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  font-size: 20px;
+  color: black;
+  border: 1px solid black;
+  background: var(--brand);
+  border: none;
+  cursor: pointer;
+}
+
+/* -------secound image start --  */
+
+.team-member {
+  text-align: center;
+  cursor: pointer;
+}
+
+.team-member .image{
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.team-member .image img{
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.team-member .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease;
+  border: 3px solid #007bff;
+}
+
+.team-member h5 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.team-member .social-icons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.team-member .social-icons a {
+  color: white;
+}
+
+.team-member .social-icons .under-link{
+  border: 3px solid white;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.team-member:hover .social-icons {
+  top: 50%;
+  opacity: 1;
+}
+
+.team-member:hover .social-icons h3{
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.team-member:hover .overlay {
+  top: 0%;
+  opacity: 1;
+}
+
+.team-member .content {
+position: absolute;
+left: 20%;
+top: 10%;
+color: white;
+}
+.team-member:hover .hide-image{
+display: none;
+}
+
+.team-member .content img{
+  object-fit: contain;
+  /* width: 60%; */
+}
+.team-member .sli-rd img{
+  height: 180px;
+}
+
+@media only screen and (max-width: 775px) {
+  .team-member .sli-rd img{
+      min-width: 320px;
+  }
+}
+.team-member .sli-rd span{
+  font-size: 10px;
+  /* line-height: 1px; */
+}
+
+.team-member-top .team-member .sli-rd{
+  border-radius: 25px;
+}
+.team-member-top .team-member .overlay{
+  border-radius: 25px;
+}
+
+.team-member-top .team-member .social-icons {
+  margin: 0; /* Removes space around the element */
+  line-height: 0; /* Sets line height to zero */
+  width: 200px;
+}
+.team-member-top .team-member .social-icons span{
+  line-height: 2;
+}
+
+/* Styling the container */
+.sli-rd {
+  position: relative;
+  width: fit-content;
+}
+/* Styling the image */
+.sli-rd img {
+  width: 100%;
+}
+/* Styling the overlay */
+.sli-rd .overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* This sets half the width */
+  height: 100%; /* This covers the full height */
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+/* Media query for large image container */
+@media screen and (max-width: 992px) {
+  .large-img-container {
+    /* width: 90%; */
+    margin: 0 auto;
+    height: fit-content;
+  }
+  .large-img{
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/* Media query for large-image-container */
+@media screen and (max-width: 768px) {
+  .large-img-container {
+    padding: 20px 10px; /* Add padding to give space around the image */
+  }
+  .text-overlay {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 90%; */
+    text-align: center;
+  }
+  .text-overlay p.overlay-content {
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  .img-container{
+    width: 100%;
+    height: 100%;
+  }
+.large-img{
+  width: 100%;
+  height: 1000px;
+}
+.text-overlay{
+  top: 10%;
+  /* width: 90% */
+}
+.team-member .content img{
+  display: none;
+}
+}
+
+/* Media query for large-image-container */
+@media screen and (min-width: 968px) {
+  .overlay-content{
+    padding: 0px 70px;
+    font-size: 20px;
+  }
+  .large-img {
+    max-height: 700px;
+  }
+}
+
+
+
+.classy-menu .classynav{
+  background-color: black;
+  height: 100%;
+}
+
+/* Hides the scrollbar but keeps scrolling */
+.classy-menu {
+  overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
+
+/* For Webkit-based browsers (Chrome, Safari) */
+.classy-menu::-webkit-scrollbar {
+  width: 0px; /* Hides scrollbar */
+}
+
+/* Hides the scrollbar but keeps scrolling */
+.classy-menu {
+  overflow: auto; /* Allows scrolling */
+  -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
